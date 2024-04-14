@@ -1,3 +1,5 @@
+import calculate from "./calculate.js";
+
 const main = document.querySelector('main');
 const root = document.querySelector(':root');
 const input = document.getElementById('input');
@@ -36,10 +38,6 @@ input.addEventListener('keydown', function(ev){
 
 document.getElementById('equal').addEventListener('click', calculate)
 
-function calculate(){
-    const result = eval(input.value)
-    resultInput.value = result
-}
 
 document.getElementById('themeSwitcher').addEventListener('click', function(){
     if(main.dataset.theme === 'dark'){
